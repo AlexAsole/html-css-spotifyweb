@@ -21,7 +21,8 @@
   width: 100vw;
   height: 100vh;
 }
-.aa-sidebar{
+
+.aa-sidebar-inner{
   width: 15%;
   height: calc(100% - 90px);
   border: 1px solid #000;
@@ -30,7 +31,7 @@
 }
 .aa-content{
   width: 85%;
-  height: 100%;
+  height: calc(100% - 90px);
   border: 1px solid #000;
   background-color: #0f0;
 }
@@ -42,7 +43,7 @@
   position: fixed;
   bottom: 0;
 }
-
+/* SIDEBAR */
 .aa-ex{
   width: 90%;
   margin: 0 auto;
@@ -59,13 +60,11 @@
 }
 .aa-logo{
   width: 90%;
-  height: 30px;
   border: 1px solid #000;
   background: #f00;
   margin: 0 auto;
 }
 .aa-list{
-  max-height: 300px;
   width: 90%;
   margin: 0 auto;
   background: #00f;
@@ -75,4 +74,33 @@
 }
 ul{
   list-style: none;
+}
+/* CONTENT */
+.aa-fixed-bar{
+  width: 100%;
+  height: 60px;
+  border: 1px solid #000;
+  background: #aaa;
+}
+.aa-upgrade{
+  width: 200px;
+  height: 45px;
+  background-color: #f00;
+  border: 1px solid #000;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+}
+.aa-song-container{
+  overflow-y: auto;
+}
+.aa-row{
+  border: 1px solid #000;
+  background-color: #f0f;
+}
+.aa-box{
+  height: 150px;
+  width: 150px;
+  background: #ccc;
+  margin: 20px 0 20px 20px;
 }

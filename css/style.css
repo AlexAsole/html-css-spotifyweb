@@ -14,6 +14,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+.aa-sub{
+  color: #6D7075;
+  font-size: 12px;
+  margin: 5px;
+}
+.aa-title{
+  margin: 20px;
+  color: #fff;
+}
 
 /* CONTENITORI */
 .aa-wrapper{
@@ -112,10 +121,7 @@
   color: #64676D;
   margin: 10px 0 10px 10px;
 }
-.aa-row h2{
-  margin-left: 20px;
-  color: #fff;
-}
+
 .aa-box{
   text-align: center;
   color: #fff;
@@ -125,8 +131,4 @@
 .aa-box img{
   height: 180px;
 
-}
-.aa-box p{
-  color: #6D7075;
-  font-size: 12px;
 }

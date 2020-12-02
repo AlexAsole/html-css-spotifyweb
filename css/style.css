@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.aa-fl{
+  float: left;
+}
+.aa-fr{
+  float: right;
+}
+
+.aa-wrapper{
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.aa-sidebar{
+  width: 20%;
+  height: 100%;
+  border: 1px solid #000;
+  background-color: #f00;
+}
+.aa-content{
+  width: 80%;
+  height: 100%;
+  border: 1px solid #000;
+  background-color: #0f0;
+}
+.aa-player{
+  width: 100%;
+  height: 90px;
+  border: 1px solid #000;
+  background-color: #00f;
+  position: fixed;
+  bottom: 0;
+}

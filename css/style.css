@@ -1,3 +1,4 @@
+/* UTILITY */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -9,21 +10,25 @@
 .aa-fr{
   float: right;
 }
+.aa-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
 
+/* CONTENITORI */
 .aa-wrapper{
   max-width: 100%;
   width: 100vw;
   height: 100vh;
 }
-
 .aa-sidebar{
-  width: 20%;
-  height: 100%;
+  width: 15%;
+  height: calc(100% - 90px);
   border: 1px solid #000;
   background-color: #f00;
 }
 .aa-content{
-  width: 80%;
+  width: 85%;
   height: 100%;
   border: 1px solid #000;
   background-color: #0f0;
@@ -35,4 +40,33 @@
   background-color: #00f;
   position: fixed;
   bottom: 0;
+}
+
+.aa-ex{
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background: #bbb;
+}
+.aa-ex2{
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background: #ccc;
+  align-self: flex-end;
+}
+.aa-logo{
+  width: 90%;
+  height: 30px;
+  border: 1px solid #000;
+  background: #f00;
+  margin: 0 auto;
+}
+.aa-list{
+  width: 90%;
+  margin: 0 auto;
+  background: #00f;
+  border: 1px solid #000;
+  overflow-y: 0;
 }

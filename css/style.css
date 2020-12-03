@@ -23,6 +23,9 @@
   margin: 20px;
   color: #fff;
 }
+.aa-rounded{
+  border-radius: 50%;
+}
 
 /* CONTENITORI */
 .aa-wrapper{
@@ -108,6 +111,7 @@ main{
   position: absolute;
   top: 7px;
   right: 250px;
+  background-color: transparent;
 }
 /* SONG-CONTAINER */
 .aa-song-container{
@@ -125,9 +129,29 @@ main{
   display:inline-block;
   text-transform: uppercase;
   font-weight: bold;
-  color: #64676D;
+
   margin: 10px 0 10px 10px;
+  position: relative;
 }
+.aa-bar li > a{
+  color: #64676D;
+  text-decoration: none;
+}
+.aa-bar li::after{
+  content: "";
+  height: 3px;
+  width: 20px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -12px;
+  left: 40%;
+  display: none;
+}
+.aa-bar li:hover::after{
+  display: block;
+}
+
+
 
 .aa-box{
   text-align: center;
@@ -135,7 +159,12 @@ main{
   width: 200px;
   margin: 10px 0 10px 10px;
 }
-.aa-box img{
-  height: 180px;
-
+.aa-img{
+  width: 180px;
+}
+.aa-img:hover{
+  opacity: .4;
+}
+.aa-img img{
+  width: 100%;
 }

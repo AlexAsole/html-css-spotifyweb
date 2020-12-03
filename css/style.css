@@ -79,7 +79,7 @@ main{
 }
 .aa-scroll{
   height: 480px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .aa-list ul{
   list-style: none;

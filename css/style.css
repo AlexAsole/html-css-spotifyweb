@@ -160,11 +160,22 @@ main{
   margin: 10px 0 10px 10px;
 }
 .aa-img{
-  width: 180px;
+  position: relative;
 }
-.aa-img:hover{
-  opacity: .4;
+.aa-img i{
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 70px;
+}
+.aa-img:hover i{
+  display: block;
 }
 .aa-img img{
   width: 100%;
+}
+.aa-img:hover{
+  background-color: rgba(0,0,0,.4);
 }

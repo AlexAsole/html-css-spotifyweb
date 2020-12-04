@@ -244,26 +244,34 @@ main{
   margin-right: 20px;
 
 }
+
 .aa-img{
   position: relative;
 }
+
 .aa-img i{
-  display: none;
+
   position: absolute;
   transform: translate(-50%,-50%);
   top: 50%;
   left: 50%;
   font-size: 70px;
 }
-.aa-img:hover i{
-  display: block;
-  opacity: 2;
-}
+
 .aa-img img{
   width: 100%;
 }
-.aa-img:hover{
-  opacity: .5;
+.aa-opaco{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.aa-img:hover .aa-opaco{
+  display: block;
   cursor: pointer;
 }
 /* PLAYER */
@@ -324,6 +332,9 @@ li.aa-big:hover{
 @media screen and (max-width:768px){
   .aa-box{
     width: calc(50% - 20px);
+  }
+  .aa-player-left, .aa-player-right{
+    flex-basis: 100px;
   }
 }
 @media screen and (max-width:575px) {

@@ -53,6 +53,7 @@
 }
 .aa-player-bar:hover .aa-player-pointer{
   display: block;
+  cursor: pointer;
 }
 .aa-player-pointer{
   display: none;
@@ -107,9 +108,8 @@ main{
 .aa-side-2{
   width: calc(100% - 20px);
   color: #717171;
-  position: relative;
-  bottom: 60px;
   margin-left: 20px;
+
 }
 
 .aa-logo{
@@ -123,8 +123,12 @@ main{
   margin: 20px 20px;
 }
 .aa-scroll{
-  height: 48vh;
+  height: 300px;
   overflow-y: auto;
+}
+.aa-scroll-inner{
+  height: 100%;
+
 }
 .aa-list ul{
   list-style: none;
@@ -277,7 +281,7 @@ main{
 /* PLAYER */
 .aa-player-left, .aa-player-right{
   align-items: center;
-  flex-basis: 230px;
+  width: 230px;
   color: #fff;
 }
 
@@ -295,7 +299,7 @@ main{
   color: #6D7075;
 }
 .aa-player-menu{
-  flex-grow: 3;
+  width: calc(100% - 460px);
   text-align: center;
   color: #fff;
 }
@@ -315,6 +319,7 @@ li.aa-big{
 }
 li.aa-big:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 .aa-player-time{
   margin-bottom: 20px;
@@ -324,9 +329,17 @@ li.aa-big:hover{
 }
 
 /* MEDIA QUERY */
+@media screen and (min-width:992px){
+  .aa-hide-lg{
+    display: none;
+  }
+}
 @media screen and (max-width:992px){
   .aa-box{
     width: calc(100% / 4 - 20px);
+  }
+  .aa-hide-md{
+    display: none;
   }
 }
 @media screen and (max-width:768px){
@@ -334,12 +347,22 @@ li.aa-big:hover{
     width: calc(50% - 20px);
   }
   .aa-player-left, .aa-player-right{
-    flex-basis: 100px;
+    width: 150px;
   }
+  .aa-player-menu{
+    width: calc(100% - 300px);
+  }
+  .aa-hide-sm{
+    display: none;
+  }
+
 }
 @media screen and (max-width:575px) {
   .aa-hidden-xs{
     display: none;
+  }
+  .aa-show-xs{
+    display: block;
   }
 
   .aa-sidebar{
@@ -358,8 +381,7 @@ li.aa-big:hover{
     margin: 5px 0;
   }
   .aa-side-4{
-    position: absolute;
-    bottom: 0;
+    align-self: flex-end;
   }
   .aa-profile::before{
     display: none;
@@ -376,8 +398,12 @@ li.aa-big:hover{
   }
 
   .aa-player-left, .aa-player-right{
-    width: 60px;
+    width: 150px;
   }
+  .aa-player-menu{
+    width: calc(100% - 300px);
+  }
+
   .aa-player-left, .aa-player-right, .aa-player-menu{
     transform: scale(.6);
   }

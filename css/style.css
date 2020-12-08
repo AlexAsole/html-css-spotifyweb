@@ -123,13 +123,10 @@ main{
   margin: 20px 20px;
 }
 .aa-scroll{
-  height: 300px;
+  height: 40vh;
   overflow-y: auto;
 }
-.aa-scroll-inner{
-  height: 100%;
 
-}
 .aa-list ul{
   list-style: none;
 }
